@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #212529;
+}
+
+h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -3px;
+    margin: auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    margin-top: 128px;
+    margin-bottom: 112px;
+    max-width: 660px;
+}
+
+.intro-image_texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.intro-description {
+    margin: 0;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1px;
+}
+
+.intro-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    font-family: inherit;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 32px;
+    text-decoration: none;
+    color: inherit;
+    height: 64px;
+    padding-left: 24px;
+    padding-right: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+.button-primary {
+    background: #FFD43B;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button-primary:hover {
+    background: #fcc419;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button-primary:active {
+    background: #f59f00;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.button-secondary {
+    background: #F1F3F5;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button-secondary:hover {
+    background: #e9ecef;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button-secondary:active {
+    background: #ced4da;
+    transition: background-color 0.1s ease-in-out;
+}
