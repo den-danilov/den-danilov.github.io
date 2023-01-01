@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,7 @@ body{
     background-color: #ffec99;
 }
 
-h1{
+h1 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
     font-size: 80px;
@@ -182,7 +182,7 @@ h2 {
     text-align: center;
     background: #EBFBEE;
     transition: background-color 0.2s ease-in-out;
-    padding-top: 5%;
+    padding-top: 7%;
     padding-bottom: 5%;
 }
 
@@ -194,7 +194,10 @@ h2 {
 .img-pichon-ui {
     position: absolute;
     margin: auto;
-    top: 5%; left: 0; bottom: 0; right: 0;
+    top: 7%;
+    left: 0;
+    bottom: 0;
+    right: 0;
     box-shadow: 0px 1px 8px rgba(43, 138, 62, 0.08), 0px 0px 0px 1px rgba(43, 138, 62, 0.08), 0px 50px 30px -40px rgba(43, 138, 62, 0.12);
     border-radius: 1%;
     width: 89%;
@@ -213,6 +216,30 @@ h2 {
 .img-pichon-feedback {
     width: 89%;
 }
+
+.projects-fugue {
+    text-align: center;
+    background-image: url(projects-assets/fugue-bg-woman@3.webp);
+    background-size: cover;
+    background-position: center top;
+}
+
+.img-fugue-text {
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 79%;
+    max-width: 100%;
+}
+
+.img-fugue-player-bottom {
+    box-shadow: 0px 1.2663px 10.1304px rgba(15, 23, 43, 0.08), 0px 0px 0px 1.2663px rgba(15, 23, 43, 0.08), 0px 63.3152px 37.9891px -50.6522px rgba(15, 23, 43, 0.12);
+    border-radius: 16px;
+}
+
+/* .img-fugue-bg-woman {
+    max-width: 100%;
+} */
 
 .about {
     max-width: 660px;
