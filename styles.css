@@ -8,13 +8,13 @@ body{
     line-height: 32px;
     color: #212529;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 128px;
     margin-left: 32px;
     margin-right: 32px;
 }
 
 ::selection {
-    background-color: #fff3bf;
+    background-color: #ffec99;
 }
 
 h1{
@@ -126,7 +126,7 @@ h2 {
 .projects {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     gap: 32px;
     width: 100%;
     max-width: 1302px;
@@ -141,12 +141,77 @@ h2 {
 }
 
 .projects-row-tile {
-    flex-grow: 1;
-    background: #ced4da;
+    background: #f8f9fa;
     width: 100%;
-    height: 600px;
     box-shadow: 0px 1px 8px rgba(15, 23, 43, 0.08), 0px 0px 0px 1px rgba(15, 23, 43, 0.08), 0px 50px 30px -40px rgba(15, 23, 43, 0.12);
     border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-material-design-icons {
+    background: #E3FAFC;
+    transition: background-color 0.2s ease-in-out;
+    padding-bottom: 10%;
+}
+
+.projects-material-design-icons:hover {
+    background: #C5F6FA;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.img-material-plugin-ui {
+    box-shadow: 0px 50px 30px -40px rgba(11, 114, 133, 0.12);
+    filter: drop-shadow(0px 1px 8px rgba(11, 114, 133, 0.08));
+    position: absolute;
+    top: 9%;
+    left: 67%;
+    width: 44%;
+    height: auto;
+}
+
+.img-material-plugin-text {
+    position: relative;
+    top: 8%;
+    left: 6%;
+    width: 54%;
+    height: auto;
+}
+
+.projects-pichon {
+    text-align: center;
+    background: #EBFBEE;
+    transition: background-color 0.2s ease-in-out;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.projects-pichon:hover {
+    background: #d3f9d8;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.img-pichon-ui {
+    position: absolute;
+    margin: auto;
+    top: 5%; left: 0; bottom: 0; right: 0;
+    box-shadow: 0px 1px 8px rgba(43, 138, 62, 0.08), 0px 0px 0px 1px rgba(43, 138, 62, 0.08), 0px 50px 30px -40px rgba(43, 138, 62, 0.12);
+    border-radius: 1%;
+    width: 89%;
+}
+
+.img-pichon-text {
+    width: 53%;
+}
+
+.img-pichon-bg-circle {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 71%;
+}
+
+.img-pichon-feedback {
+    width: 89%;
 }
 
 .about {
