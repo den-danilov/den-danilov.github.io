@@ -36,6 +36,10 @@ h2 {
     margin-top: 8px;
 }
 
+img {
+    display: block;
+}
+
 .emoji-icon {
     font-size: 48px;
     line-height: 48px;
@@ -141,8 +145,7 @@ h2 {
 }
 
 .projects-row-tile {
-    background: #f8f9fa;
-    width: 100%;
+    background: #FFFFFF;
     box-shadow: 0px 1px 8px rgba(15, 23, 43, 0.08), 0px 0px 0px 1px rgba(15, 23, 43, 0.08), 0px 50px 30px -40px rgba(15, 23, 43, 0.12);
     border-radius: 12px;
     position: relative;
@@ -152,7 +155,7 @@ h2 {
 .projects-material-design-icons {
     background: #E3FAFC;
     transition: background-color 0.2s ease-in-out;
-    padding-bottom: 10%;
+
 }
 
 .projects-material-design-icons:hover {
@@ -171,19 +174,14 @@ h2 {
 }
 
 .img-material-plugin-text {
+    max-width: 100%;
     position: relative;
-    top: 8%;
-    left: 6%;
-    width: 54%;
-    height: auto;
 }
 
 .projects-pichon {
     text-align: center;
     background: #EBFBEE;
     transition: background-color 0.2s ease-in-out;
-    padding-top: 7%;
-    padding-bottom: 5%;
 }
 
 .projects-pichon:hover {
@@ -203,43 +201,37 @@ h2 {
     width: 89%;
 }
 
-.img-pichon-text {
-    width: 53%;
-}
-
-.img-pichon-bg-circle {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 71%;
-}
-
-.img-pichon-feedback {
-    width: 89%;
+.img-pichon-background {
+    max-width: 100%;
 }
 
 .projects-fugue {
     text-align: center;
-    background-image: url(projects-assets/fugue-bg-woman@3.webp);
-    background-size: cover;
-    background-position: center top;
+    background: radial-gradient(100% 43.23% at 100% 7.64%, #FFFBDC 0%, rgba(255, 251, 220, 0) 100%)
+        , radial-gradient(100% 40.73% at 0% 68.54%, #DAE6F6 0%, rgba(218, 230, 246, 0) 100%)
+        , radial-gradient(100% 77.9% at 0% 15.13%, #EAFCF1 0%, rgba(234, 252, 241, 0) 100%)
+        , radial-gradient(100% 66.35% at 100% 69.95%, #FBDED7 0%, rgba(251, 222, 215, 0) 100%), #FFFFFF;
 }
 
-.img-fugue-text {
-    margin-top: 1%;
-    margin-right: 1%;
-    margin-left: 1%;
-    margin-bottom: 79%;
+.img-fugue-bg {
     max-width: 100%;
 }
 
-.img-fugue-player-bottom {
-    box-shadow: 0px 1.2663px 10.1304px rgba(15, 23, 43, 0.08), 0px 0px 0px 1.2663px rgba(15, 23, 43, 0.08), 0px 63.3152px 37.9891px -50.6522px rgba(15, 23, 43, 0.12);
-    border-radius: 16px;
+.projects-stratum {
+    text-align: center;
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease-in-out;
 }
 
-/* .img-fugue-bg-woman {
+.projects-stratum:hover {
+    background-color: #f1f3f5;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.img-stratum-background {
     max-width: 100%;
-} */
+}
+
 
 .about {
     max-width: 660px;
