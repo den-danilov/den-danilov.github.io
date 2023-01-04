@@ -207,10 +207,7 @@ img {
 
 .projects-fugue {
     text-align: center;
-    background: radial-gradient(100% 43.23% at 100% 7.64%, #FFFBDC 0%, rgba(255, 251, 220, 0) 100%)
-        , radial-gradient(100% 40.73% at 0% 68.54%, #DAE6F6 0%, rgba(218, 230, 246, 0) 100%)
-        , radial-gradient(100% 77.9% at 0% 15.13%, #EAFCF1 0%, rgba(234, 252, 241, 0) 100%)
-        , radial-gradient(100% 66.35% at 100% 69.95%, #FBDED7 0%, rgba(251, 222, 215, 0) 100%), #FFFFFF;
+    background: radial-gradient(100% 43.23% at 100% 7.64%, #FFFBDC 0%, rgba(255, 251, 220, 0) 100%), radial-gradient(100% 40.73% at 0% 68.54%, #DAE6F6 0%, rgba(218, 230, 246, 0) 100%), radial-gradient(100% 77.9% at 0% 15.13%, #EAFCF1 0%, rgba(234, 252, 241, 0) 100%), radial-gradient(100% 66.35% at 100% 69.95%, #FBDED7 0%, rgba(251, 222, 215, 0) 100%), #FFFFFF;
 }
 
 .img-fugue-bg {
@@ -232,6 +229,71 @@ img {
     max-width: 100%;
 }
 
+.img-stratum-pontus {
+    position: absolute;
+    left: 12%;
+    top: 48%;
+    width: 40%;
+    height: auto;
+    border-radius: 6%;
+    box-shadow: 0px 1px 8px rgba(15, 23, 43, 0.08), 0px 50px 30px -40px rgba(15, 23, 43, 0.12);
+    transform: rotate(-6deg);
+}
+
+.img-stratum-eugene {
+    position: absolute;
+    left: 49%;
+    top: 43%;
+    width: 40%;
+    height: auto;
+    border-radius: 6%;
+    box-shadow: 0px 1px 8px rgba(15, 23, 43, 0.08), 0px 50px 30px -40px rgba(15, 23, 43, 0.12);
+    transform: rotate(6deg);
+}
+
+.projects-figma-plugin {
+    text-align: center;
+    background-color: #F3F0FF;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.projects-figma-plugin:hover {
+    background-color: #e5dbff;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.img-figma-plugin-text {
+    max-width: 100%;
+}
+
+.img-figma-plugin-icons {
+    position: absolute;
+    left: -2%;
+    top: 38%;
+    width: 28.81%;
+}
+
+.img-figma-plugin-photos {
+    position: absolute;
+    border-radius: 0.5%;
+    box-shadow: 0px 1.2663px 10.1304px rgba(15, 23, 43, 0.08), 0px 0px 0px 1.2663px rgba(15, 23, 43, 0.08), 0px 182.32px 190.99px 57px rgba(15, 23, 43, 0.2);
+    top: 34%;
+    left: 26.4%;
+    width: 47.24%;
+}
+
+.img-figma-plugin-illustrations {
+    position: absolute;
+    right: -2%;
+    top: 38%;
+    width: 28.97%;
+}
+
+.img-figma-plugin-feedback {
+    max-width: 100%;
+    position: relative;
+    margin-top: 60%;
+}
 
 .about {
     max-width: 660px;
