@@ -163,6 +163,12 @@ img {
     transition: background-color 0.4s ease-in-out;
 }
 
+.projects-material-design-icons:hover .img-material-plugin-ui {
+    transform: rotate(-2deg);
+    transform-origin: left bottom;
+    transition: transform 0.4s ease-in-out;
+}
+
 .img-material-plugin-ui {
     box-shadow: 0px 50px 30px -40px rgba(11, 114, 133, 0.12);
     filter: drop-shadow(0px 1px 8px rgba(11, 114, 133, 0.08));
@@ -171,6 +177,8 @@ img {
     left: 67%;
     width: 44%;
     height: auto;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: left bottom;
 }
 
 .img-material-plugin-text {
@@ -189,6 +197,11 @@ img {
     transition: background-color 0.4s ease-in-out;
 }
 
+.projects-pichon:hover .img-pichon-ui {
+    transform: scale(105%) rotate(-2deg);
+    transition: transform 0.4s cubic-bezier(.42,.97,.52,1.49);
+}
+
 .img-pichon-ui {
     position: absolute;
     margin: auto;
@@ -199,6 +212,7 @@ img {
     box-shadow: 0px 1px 8px rgba(43, 138, 62, 0.08), 0px 0px 0px 1px rgba(43, 138, 62, 0.08), 0px 50px 30px -40px rgba(43, 138, 62, 0.12);
     border-radius: 1%;
     width: 89%;
+    transition: transform 0.2s ease-in-out;
 }
 
 .img-pichon-background {
@@ -262,6 +276,21 @@ img {
     transition: background-color 0.4s ease-in-out;
 }
 
+.projects-figma-plugin:hover .img-figma-plugin-photos {
+    transform: translateY(-2%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.projects-figma-plugin:hover .img-figma-plugin-icons {
+    transform: translateX(5%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.projects-figma-plugin:hover .img-figma-plugin-illustrations {
+    transform: translateX(-5%);
+    transition: transform 0.4s ease-in-out;
+}
+
 .img-figma-plugin-text {
     max-width: 100%;
 }
@@ -271,6 +300,7 @@ img {
     left: -2%;
     top: 38%;
     width: 28.81%;
+    transition: transform 0.2s ease-in-out;
 }
 
 .img-figma-plugin-photos {
@@ -280,6 +310,7 @@ img {
     top: 34%;
     left: 26.4%;
     width: 47.24%;
+    transition: transform 0.2s ease-in-out;
 }
 
 .img-figma-plugin-illustrations {
@@ -287,6 +318,7 @@ img {
     right: -2%;
     top: 38%;
     width: 28.97%;
+    transition: transform 0.2s ease-in-out;
 }
 
 .img-figma-plugin-feedback {
@@ -298,4 +330,69 @@ img {
 .about {
     max-width: 660px;
     margin-top: 112px;
+}
+
+@media (max-width: 1024px){
+    .projects, .projects-row {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        margin-left: 16px;
+        margin-right: 16px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.5px;
+    }
+    h2 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .intro-memoji {
+        width: 58px;
+    }
+    .intro {
+        margin-top: 48px;
+        margin-bottom: 64px;
+        max-width: 288px;
+        gap: 24px;
+    }
+    .intro-image_texts {
+        gap: 8px;
+    }
+    .intro-description {
+        margin: 0;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.25px;
+    }
+    .intro-buttons {
+        gap: 8px;
+    }
+    .button {
+        font-size: 20px;
+        height: 48px;
+        padding-left: 16px;
+        padding-right: 8px;
+    }
+    .button-icon {
+        height: 24px;
+    }
+    .projects {
+        flex-direction: column;
+    }
+    .about {
+        max-width: 440px;
+        margin-top: 64px;
+    }
+    .emoji-icon {
+        font-size: 24px;
+        line-height: 24px;
+    }
 }
