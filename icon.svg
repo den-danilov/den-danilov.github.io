@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@media (prefers-color-scheme: dark) {
+    .stroke-3 { fill: #868E96; }
+    .fill-3 { fill: #212529; }
+    .stroke-2 { fill: #CED4DA; }
+    .fill-2 { fill: #212529; }
+    .stroke-1 { fill: #F8F9FA; }
+    .fill-1 { fill: #212529; }
+     }
+</style>
+<path class="stroke-3" d="M184 0V449.544L274.514 361.644L337.81 511.559L439.003 468.472L380.046 326.147H509.362L184 0Z" fill="#ADB5BD"/>
+<path class="fill-3" d="M212.07 381.617V67.5679L441.262 297.266H337.577L401.571 449.364L349.81 471.091L283.292 312.865L212.07 381.617Z" fill="white"/>
+<path class="stroke-2" d="M93 0V449.544L183.514 361.644L246.81 511.559L348.003 468.472L289.046 326.147H418.362L93 0Z" fill="#495057"/>
+<path class="fill-2" d="M121.07 381.617V67.5679L350.262 297.266H246.577L310.571 449.364L258.81 471.091L192.292 312.865L121.07 381.617Z" fill="white"/>
+<path class="stroke-1" d="M2 0V449.544L92.5136 361.644L155.81 511.559L257.003 468.472L198.046 326.147H327.362L2 0Z" fill="#212529"/>
+<path class="fill-1" d="M30.0701 381.617V67.5679L259.262 297.266H155.577L219.571 449.364L167.81 471.091L101.292 312.865L30.0701 381.617Z" fill="white"/>
+</svg>

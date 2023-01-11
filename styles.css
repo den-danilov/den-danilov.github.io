@@ -164,8 +164,7 @@ img {
 }
 
 .projects-material-design-icons:hover .img-material-plugin-ui {
-    transform: rotate(-2deg);
-    transform-origin: left bottom;
+    transform: translateX(-3%);
     transition: transform 0.4s ease-in-out;
 }
 
@@ -198,7 +197,7 @@ img {
 }
 
 .projects-pichon:hover .img-pichon-ui {
-    transform: scale(105%) rotate(-2deg);
+    transform: scale(102%);
     transition: transform 0.4s cubic-bezier(.42,.97,.52,1.49);
 }
 
