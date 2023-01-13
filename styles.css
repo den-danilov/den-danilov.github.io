@@ -236,7 +236,7 @@ img {
 
 .projects-fugue:hover .projects-fugue-hover{
     opacity: 1;
-    transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .img-fugue-bg {
