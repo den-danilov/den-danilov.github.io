@@ -135,7 +135,6 @@ img {
 
 .projects__tile {
     background: #FFFFFF;
-    box-shadow: 0px 1px 8px rgba(15, 23, 43, 0.08), 0px 0px 0px 1px rgba(15, 23, 43, 0.08), 0px 50px 30px -40px rgba(15, 23, 43, 0.12);
     border-radius: 12px;
     position: relative;
     overflow: hidden;
@@ -146,6 +145,7 @@ img {
 
 .project-material-design-icons {
     background: #E3FAFC;
+    box-shadow: 0px 0px 0px 1px #C5F6FA;
     transition: background-color 0.2s ease-in-out;
 
 }
@@ -180,6 +180,7 @@ img {
 .project-pichon {
     text-align: center;
     background: #EBFBEE;
+    box-shadow: 0px 0px 0px 1px #D3F9D8;
     transition: background-color 0.2s ease-in-out;
 }
 
@@ -213,6 +214,7 @@ img {
 .project-fugue {
     text-align: center;
     background: radial-gradient(100% 43.23% at 100% 7.64%, #FFFBDC 0%, rgba(255, 251, 220, 0) 100%), radial-gradient(100% 40.73% at 0% 68.54%, #DAE6F6 0%, rgba(218, 230, 246, 0) 100%), radial-gradient(100% 77.9% at 0% 15.13%, #EAFCF1 0%, rgba(234, 252, 241, 0) 100%), radial-gradient(100% 66.35% at 100% 69.95%, #FBDED7 0%, rgba(251, 222, 215, 0) 100%), #FFFFFF;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
     transition: 0.2s ease-in-out;
 }
 
@@ -239,6 +241,7 @@ img {
 .project-stratum {
     text-align: center;
     background-color: #f8f9fa;
+    box-shadow: 0px 0px 0px 1px #E9ECEF;
     transition: background-color 0.2s ease-in-out;
 }
 
@@ -260,12 +263,13 @@ img {
     border-radius: 6%;
     box-shadow: 0px 1px 8px rgba(15, 23, 43, 0.08), 0px 50px 30px -40px rgba(15, 23, 43, 0.12);
     transform: rotate(-6deg);
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .project-stratum:hover .img-stratum-pontus {
-    transform: translateY(-5%) rotate(-6deg);
-    transition: transform 0.4s ease-in-out;
+    transform: scale(105%) rotate(-6deg);
+    box-shadow: 0px 1px 8px rgba(15, 23, 43, 0.08), 0px 50px 80px -24px rgba(15, 23, 43, 0.2);
+    transition: all 0.4s cubic-bezier(.42,.97,.52,1.49);
     transition-delay: 0.1s;
 }
 
@@ -278,18 +282,20 @@ img {
     border-radius: 6%;
     box-shadow: 0px 1px 8px rgba(15, 23, 43, 0.08), 0px 50px 30px -40px rgba(15, 23, 43, 0.12);
     transform: rotate(6deg);
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     transition-delay: 0.05s;
 }
 
 .project-stratum:hover .img-stratum-eugene {
-    transform: translateY(-5%) rotate(6deg);
-    transition: transform 0.4s ease-in-out;
+    transform: scale(105%) rotate(6deg);
+    box-shadow: 0px 1px 8px rgba(15, 23, 43, 0.08), 0px 50px 80px -24px rgba(15, 23, 43, 0.2);
+    transition: all 0.4s cubic-bezier(.42,.97,.52,1.49);
 }
 
 .project-figma-plugin {
     text-align: center;
     background-color: #F3F0FF;
+    box-shadow: 0px 0px 0px 1px #E5DBFF;
     transition: background-color 0.2s ease-in-out;
 }
 
