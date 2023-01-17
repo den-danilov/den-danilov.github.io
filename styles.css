@@ -7,10 +7,8 @@ body {
     font-size: 24px;
     line-height: 32px;
     color: #212529;
-    margin-top: auto;
-    margin-bottom: 128px;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin: auto 32px 128px;
+    
 }
 
 ::selection {
@@ -128,42 +126,36 @@ img {
 }
 
 .projects {
-    display: flex;
-    flex-direction: row;
-    align-items: top;
-    gap: 32px;
+    column-count: 2;
+    column-gap: 32px;
     width: 100%;
     max-width: 1302px;
+    transition: column-gap 0.3s;
 }
 
-.projects-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    width: 100%;
-}
-
-.projects-row-tile {
+.projects__tile {
     background: #FFFFFF;
     box-shadow: 0px 1px 8px rgba(15, 23, 43, 0.08), 0px 0px 0px 1px rgba(15, 23, 43, 0.08), 0px 50px 30px -40px rgba(15, 23, 43, 0.12);
     border-radius: 12px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 32px;
+    float: left;
+    transition: margin-bottom 0.3s;
 }
 
-.projects-material-design-icons {
+.project-material-design-icons {
     background: #E3FAFC;
     transition: background-color 0.2s ease-in-out;
 
 }
 
-.projects-material-design-icons:hover {
+.project-material-design-icons:hover {
     background: #C5F6FA;
     transition: background-color 0.4s ease-in-out;
 }
 
-.projects-material-design-icons:hover .img-material-plugin-ui {
+.project-material-design-icons:hover .img-material-plugin-ui {
     transform: translateX(-3%);
     transition: transform 0.4s ease-in-out;
 }
@@ -185,18 +177,18 @@ img {
     position: relative;
 }
 
-.projects-pichon {
+.project-pichon {
     text-align: center;
     background: #EBFBEE;
     transition: background-color 0.2s ease-in-out;
 }
 
-.projects-pichon:hover {
+.project-pichon:hover {
     background: #d3f9d8;
     transition: background-color 0.4s ease-in-out;
 }
 
-.projects-pichon:hover .img-pichon-ui {
+.project-pichon:hover .img-pichon-ui {
     transform: scale(102%);
     transition: transform 0.4s cubic-bezier(.42,.97,.52,1.49);
 }
@@ -218,13 +210,13 @@ img {
     max-width: 100%;
 }
 
-.projects-fugue {
+.project-fugue {
     text-align: center;
     background: radial-gradient(100% 43.23% at 100% 7.64%, #FFFBDC 0%, rgba(255, 251, 220, 0) 100%), radial-gradient(100% 40.73% at 0% 68.54%, #DAE6F6 0%, rgba(218, 230, 246, 0) 100%), radial-gradient(100% 77.9% at 0% 15.13%, #EAFCF1 0%, rgba(234, 252, 241, 0) 100%), radial-gradient(100% 66.35% at 100% 69.95%, #FBDED7 0%, rgba(251, 222, 215, 0) 100%), #FFFFFF;
     transition: 0.2s ease-in-out;
 }
 
-.projects-fugue-hover {
+.project-fugue-hover {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     width: 100%;
@@ -234,7 +226,7 @@ img {
     transition: opacity 0.2s ease-in-out;
 }
 
-.projects-fugue:hover .projects-fugue-hover{
+.project-fugue:hover .project-fugue-hover{
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
 }
@@ -244,13 +236,13 @@ img {
     max-width: 100%;
 }
 
-.projects-stratum {
+.project-stratum {
     text-align: center;
     background-color: #f8f9fa;
     transition: background-color 0.2s ease-in-out;
 }
 
-.projects-stratum:hover {
+.project-stratum:hover {
     background-color: #f1f3f5;
     transition: background-color 0.4s ease-in-out;
 }
@@ -271,7 +263,7 @@ img {
     transition: transform 0.2s ease-in-out;
 }
 
-.projects-stratum:hover .img-stratum-pontus {
+.project-stratum:hover .img-stratum-pontus {
     transform: translateY(-5%) rotate(-6deg);
     transition: transform 0.4s ease-in-out;
     transition-delay: 0.1s;
@@ -290,33 +282,33 @@ img {
     transition-delay: 0.05s;
 }
 
-.projects-stratum:hover .img-stratum-eugene {
+.project-stratum:hover .img-stratum-eugene {
     transform: translateY(-5%) rotate(6deg);
     transition: transform 0.4s ease-in-out;
 }
 
-.projects-figma-plugin {
+.project-figma-plugin {
     text-align: center;
     background-color: #F3F0FF;
     transition: background-color 0.2s ease-in-out;
 }
 
-.projects-figma-plugin:hover {
+.project-figma-plugin:hover {
     background-color: #e5dbff;
     transition: background-color 0.4s ease-in-out;
 }
 
-.projects-figma-plugin:hover .img-figma-plugin-photos {
+.project-figma-plugin:hover .img-figma-plugin-photos {
     transform: translateY(-2%);
     transition: transform 0.4s ease-in-out;
 }
 
-.projects-figma-plugin:hover .img-figma-plugin-icons {
+.project-figma-plugin:hover .img-figma-plugin-icons {
     transform: translateX(5%);
     transition: transform 0.4s ease-in-out;
 }
 
-.projects-figma-plugin:hover .img-figma-plugin-illustrations {
+.project-figma-plugin:hover .img-figma-plugin-illustrations {
     transform: translateX(-5%);
     transition: transform 0.4s ease-in-out;
 }
@@ -363,8 +355,11 @@ img {
 }
 
 @media (max-width: 1024px){
-    .projects, .projects-row {
-        gap: 16px;
+    .projects {
+        column-gap: 16px;
+    }
+    .projects__tile {
+        margin-bottom: 16px;
     }
 }
 
@@ -415,7 +410,7 @@ img {
         height: 24px;
     }
     .projects {
-        flex-direction: column;
+        column-count: 1;
     }
     .about {
         max-width: 440px;
