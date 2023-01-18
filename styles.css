@@ -133,10 +133,11 @@ img {
     display: flex;
 }
 
-.project__column {
+.projects__column {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    transition: gap 0.3s;
 }
 
 .projects__tile {
@@ -360,11 +361,8 @@ img {
 }
 
 @media (max-width: 1024px){
-    .projects {
+    .projects, .projects__column {
         gap: 16px;
-    }
-    .projects__column {
-        margin-bottom: 16px;
     }
 }
 
