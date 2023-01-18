@@ -126,11 +126,17 @@ img {
 }
 
 .projects {
-    column-count: 2;
-    column-gap: 32px;
+    gap: 32px;
     width: 100%;
     max-width: 1302px;
-    transition: column-gap 0.3s;
+    transition: gap 0.3s;
+    display: flex;
+}
+
+.project__column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .projects__tile {
@@ -139,7 +145,6 @@ img {
     border-radius: 12px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 32px;
     float: left;
     transition: margin-bottom 0.3s;
 }
@@ -356,9 +361,9 @@ img {
 
 @media (max-width: 1024px){
     .projects {
-        column-gap: 16px;
+        gap: 16px;
     }
-    .projects__tile {
+    .projects__column {
         margin-bottom: 16px;
     }
 }
